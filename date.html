@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Protocol Initiation</title>
-    <!-- Google Fonts for pixelated text -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
-        /* Base styles for the pixel art aesthetic */
         body {
             font-family: 'Press Start 2P', cursive; /* Pixelated font */
             background-color: #1a1a1a; /* Dark goth background */
@@ -285,21 +283,17 @@
         <div class="character-display">
             <div class="character">
                 <div class="character-image">
-                    <!-- REPLACE THIS SRC WITH THE URL OF YOUR BATMAN PNG -->
                     <img src="pngegg.png" alt="Batman" onerror="this.onerror=null;this.src='https://placehold.co/120x120/444444/FFFFFF?text=BATMAN_ERR';" />
                 </div>
                 <p>Me</p>
             </div>
 
-            <!-- Rose PNG Placeholder - now between characters -->
             <div class="rose-display">
-                <!-- REPLACE THIS SRC WITH THE URL OF YOUR ROSE PNG -->
                 <img src="rose.png" alt="Rose" onerror="this.onerror=null;this.src='https://placehold.co/100x100/FF69B4/FFFFFF?text=ROSE_ERR';" />
             </div>
 
             <div class="character">
                 <div class="character-image">
-                    <!-- REPLACE THIS SRC WITH THE URL OF HER CATWOMAN PNG -->
                     <img src="Untitled.png" alt="Catwoman" onerror="this.onerror=null;this.src='https://placehold.co/120x120/FFC0CB/000000?text=CATWOMAN_ERR';" />
                 </div>
                 <p>You</p>
@@ -335,8 +329,7 @@
     </div>
 
     <script>
-        // IMPORTANT: Replace with your actual Gmail address
-        const YOUR_GMAIL_ADDRESS = "nilaysrivas1006@gmail.com"; // <-- REPLACE THIS!
+        const YOUR_GMAIL_ADDRESS = "nilaysrivas1006@gmail.com";
 
         function confirmRendezvous() {
             const dateInput = document.getElementById('date-input').value;
@@ -347,7 +340,6 @@
             const sendMailButton = document.getElementById('sendMailButton');
             const declineCheckbox = document.getElementById('declineCheckbox');
 
-            // If decline checkbox is checked, prevent confirmation
             if (declineCheckbox.checked) {
                 responseMessage.innerHTML = "ERROR: Cannot confirm rendezvous if decline option is selected. Please uncheck to proceed.";
                 tickmark.classList.remove('show');
@@ -379,18 +371,15 @@
             const tickmark = document.getElementById('tickmark');
 
             if (declineCheckbox.checked) {
-                // Disable confirm button and hide send mail button
                 confirmButton.disabled = true;
                 confirmButton.style.opacity = '0.7';
                 confirmButton.style.cursor = 'not-allowed';
                 sendMailButton.style.display = 'none';
-                tickmark.classList.remove('show'); // Hide tickmark if decline
+                tickmark.classList.remove('show'); 
 
-                // Send decline email
                 sendDeclineEmail();
                 responseMessage.innerHTML = "DECLINE PROTOCOL INITIATED. Your response has been recorded. (Your email client will open.)";
             } else {
-                // Re-enable confirm button and reset message if unchecked
                 confirmButton.disabled = false;
                 confirmButton.style.opacity = '1';
                 confirmButton.style.cursor = 'pointer';
@@ -441,7 +430,6 @@
             responseMessage.innerHTML += "<br>Initiating email transmission... (Your email client will open.)";
         }
 
-        // Set default date to Sunday of the current week (or next Sunday if today is Sunday)
         window.onload = function() {
             const today = new Date();
             const dayOfWeek = today.getDay(); // 0 for Sunday, 1 for Monday, etc.
