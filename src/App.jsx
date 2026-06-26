@@ -206,15 +206,15 @@ function App() {
               <strong>BATMAN: </strong>
               Initiating social engagement protocol, <em>mon amour</em>. My algorithms have processed
               data indicating a high affinity for sonic frequencies associated with
-              nerdy interests, alongside a notable dedication to caffeine 
+              nerdy interests, alongside a notable dedication to caffeine
               <br />
               <br />
-              (Fallen in Love Status: Confirmed).
+              (Fallen Status: Confirmed).
             </p>
             <p style={{ marginTop: '10px' }}>
               <strong>BATMAN: </strong>
               This analysis suggests a high probability of mutual enjoyment for a
-              non-mission-critical activity next Sunday (11th July 2026) or whenever you can, <em>mon cher</em>. 
+              non-mission-critical activity next Sunday (11th July 2026) or whenever you can, <em>mon cher</em>.
               <br />
               The creator does really enjoy talking to you and would love to go on a lunch date (following a surprise event) with you. Requesting temporal coordinates for optimal
               rendezvous. I hope you&apos;re taking care of yourself today. Drink
